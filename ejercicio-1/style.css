@@ -60,4 +60,10 @@ a{ color: inherit; text-underline-offset: 3px; }
   margin-top: 8px;
 }
 
-img{ height: auto; display: block; }
+.back-btn.is-fixed{
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 1000;
+  margin: 0;
+}
