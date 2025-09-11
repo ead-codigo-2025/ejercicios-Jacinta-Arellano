@@ -70,7 +70,7 @@ h1{ font-weight: 800; }
 
 .card {
   flex: 1 1 calc(50% - 8px);     
-  background: #f4f5f7;
+  background: #f4f4f4;
   border-radius: 14px;
   padding: 16px;
   text-decoration: none;
