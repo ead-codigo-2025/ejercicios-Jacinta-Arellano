@@ -21,7 +21,7 @@ h1{ font-weight: 600; }
 }
 
 .top {
-  max-width: 1120px;
+  max-width: 1360px;
   margin: 0 auto;
   padding: 32px 16px;
   display: flex;
@@ -29,7 +29,7 @@ h1{ font-weight: 600; }
   align-items: flex-start;
 }
 
-.left { flex: 1; max-width: 520px; }
+.left { flex: 1; max-width: 480px; }
 
 .left h1 {
   margin: 0 0 12px;
@@ -66,14 +66,15 @@ h1{ font-weight: 600; }
   flex: 1;
   display: flex;                 
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 24px;
 }
 
 .card {
-  flex: 1 1 calc(50% - 8px);     
+  flex: 0 0 367px;    
+  height: 160px; 
   background: #f4f4f4;
   border-radius: 0;
-  padding: 16px;
+  padding: 20px;
   text-decoration: none;
   color: inherit;
   box-shadow: 0 8px 24px rgba(0,0,0,.06);
@@ -89,7 +90,8 @@ h1{ font-weight: 600; }
   gap: 8px;
 }
 .kicker i {
-  width: 8px; height: 8px; 
+  width: 10px; 
+  height: 10px; 
   background: #1e3a8a; 
   border-radius: 0; 
   display: inline-block;
@@ -130,7 +132,8 @@ h1{ font-weight: 600; }
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 360px;
+  min-height: 444px;
+  img{border-radius:0;}   
 }
 
 .talleres-left .tag {
@@ -141,20 +144,31 @@ h1{ font-weight: 600; }
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 12px;
-  padding-bottom: 8px;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
   position:relative;
 }
+
 .talleres-left .tag i{
-  width: 8px; 
-  height: 8px;
+  width: 10px; 
+  height: 10px;
   border-radius: 0px;
   background: #64799e;          
   display: inline-block;
 }
 
+.talleres-left .tag::after{
+  content:"";
+  position:absolute;
+  left:0; 
+  bottom:0;
+  width: 444px;      
+  height: 1px;     
+  background: #223C6A;
+}
+
 .talleres-left h2{
-  margin: 0 0 12px;
+  margin: 0 0 16px;
   font-size: 40px;
   line-height: 1.2;
   position: relative;
@@ -163,11 +177,11 @@ h1{ font-weight: 600; }
 .talleres-left h2::after{
   content: "";
   display: block;
-  width: 120px;
-  height: 2px;
-  background: #223c6a;          
+  width: 64px;
+  height: 6px;
+  background: #64799e;          
   border-radius: 0px;
-  margin-top: 10px;
+  margin-top: 16px;
 }
 
 .talleres-left .desc{
@@ -183,8 +197,9 @@ h1{ font-weight: 600; }
 .talleres-right{
   flex: 1;
   display: flex;
-  min-height: 360px;           
+  min-height: 444px;           
 }
+
 .talleres-right img{
   width: 100%;
   height: 100%;
