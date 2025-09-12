@@ -25,11 +25,13 @@ h1{ font-weight: 600; }
   margin: 0 auto;
   padding: 32px 16px;
   display: flex;
-  gap: 32px;
+  gap: 0px;
   align-items: flex-start;
 }
 
-.left { flex: 1; max-width: 480px; }
+.left { 
+    flex: 0 0 588px;
+    max-width: 588pxpx; }
 
 .left h1 {
   margin: 0 0 12px;
@@ -63,15 +65,19 @@ h1{ font-weight: 600; }
 }
 
 .right {
-  flex: 1;
+  flex: 0 0 740px;
+  max-width: 740px;
   display: flex;                 
   flex-wrap: wrap;
   gap: 24px;
+  padding: 0;
 }
 
 .card {
-  flex: 0 0 367px;    
+flex: 0 0 358px;
+max-width: none;
   height: 160px; 
+  box-sizing: border-box;
   background: #f4f4f4;
   border-radius: 0;
   padding: 20px;
@@ -79,7 +85,6 @@ h1{ font-weight: 600; }
   color: inherit;
   box-shadow: 0 8px 24px rgba(0,0,0,.06);
   transition: transform .15s ease, box-shadow .15s ease;
-  min-height: 110px;
 }
 
 .kicker {
@@ -115,7 +120,7 @@ h1{ font-weight: 600; }
  }
 
 .talleres .wrap {
-  max-width: 1120px;
+  max-width: 1360px;
   margin: 0 auto;
   padding: 0 16px;
   display: flex;
@@ -124,11 +129,12 @@ h1{ font-weight: 600; }
 }
 
 .talleres-left {
-  flex: 1;
+  flex: 0 0 588px;
+  max-width: 588px;
   background: #142440;          
   color: #f4f4f4;
   border-radius: 0;
-  padding:28px 28px;
+  padding:28px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -195,7 +201,8 @@ h1{ font-weight: 600; }
 }
 
 .talleres-right{
-  flex: 1;
+  flex: 0 0 740px;
+  max-width: 740px;
   display: flex;
   min-height: 444px;           
 }
