@@ -31,7 +31,9 @@ h1{ font-weight: 600; }
 
 .left { 
     flex: 0 0 588px;
-    max-width: 588pxpx; }
+    max-width: 588px; 
+padding-right: 24px;
+}
 
 .left h1 {
   margin: 0 0 12px;
@@ -51,6 +53,7 @@ h1{ font-weight: 600; }
 .intro {
   color: #4b5563;
   margin: 0 0 20px;
+  max-width:480px;
 }
 
 .btn {
@@ -135,6 +138,7 @@ max-width: none;
   color: #f4f4f4;
   border-radius: 0;
   padding:28px;
+  padding-right: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -193,6 +197,7 @@ max-width: none;
 .talleres-left .desc{
   margin: 16px 0 20px;
   color: #f4f4f4;
+  max-width:480px;
 }
 
 .talleres-left .btn{
